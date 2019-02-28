@@ -45,6 +45,10 @@
 		},
 		"infrastructure": {}
 	},
+	"Transport for London": {
+		"id": "",
+		"about": "https://cycling.data.tfl.gov.uk/"
+	},
 	"Wakefield Council": {
 		"id": "E08000036"
 	}

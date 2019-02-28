@@ -8,7 +8,7 @@ S(document).ready(function(){
 			filetypes = ['shapefile','geojson','kml','pdf'];
 			for(la in d){
 				if(d[la]){
-					rows += '<tr><td>'+la+'</td>';
+					rows += '<tr><td>'+(d[la].about ? '<a href="'+d[la].about+'">'+la+'</a>':la)+'</td>';
 					for(t = 0; t < types.length; t++){
 						typ = d[la][types[t]];
 						rows += '<td class="'+types[t]+'">'+(typ && typ.about ? '<a href="'+typ.about+'">more info</a>':'')+'</td>';
