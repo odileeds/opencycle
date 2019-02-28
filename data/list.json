@@ -1,4 +1,13 @@
 {
+	"Barnsley": {
+		"id":"E08000016"
+	},
+	"Birmingham": {
+		"id":"E08000025"
+	},
+	"Bolton": {
+		"id":"E08000001"
+	},
 	"Bradford City Council": {
 		"id": "E08000032",
 		"routes": {
@@ -10,6 +19,9 @@
 				}
 			}
 		}
+	},
+	"Bury": {
+		"id":"E08000002"
 	},
 	"Calderdale Council": {
 		"id": "E08000033",
@@ -23,8 +35,20 @@
 			}
 		}
 	},
+	"Coventry": {
+		"id":"E08000026"
+	},
+	"Doncaster": {
+		"id":"E08000017"
+	},
+	"Dudley": {
+		"id":"E08000027"
+	},
 	"Kirklees Council": {
 		"id": "E08000034"
+	},
+	"Knowsley": {
+		"id":"E08000011"
 	},
 	"Leeds City Council": {
 		"id": "E08000035",
@@ -45,11 +69,77 @@
 		},
 		"infrastructure": {}
 	},
+	"Liverpool": {
+		"id":"E08000012"
+	},
+	"Manchester": {
+		"id":"E08000003"
+	},
+	"Newcastle upon Tyne": {
+		"id":"E08000021"
+	},
+	"North Tyneside": {
+		"id":"E08000022"
+	},
+	"Oldham": {
+		"id":"E08000004"
+	},
+	"Rochdale": {
+		"id":"E08000005"
+	},
+	"Rotherham": {
+		"id":"E08000018"
+	},
+	"Salford": {
+		"id":"E08000006"
+	},
+	"Sandwell": {
+		"id":"E08000028"
+	},
+	"Sefton": {
+		"id":"E08000014"
+	},
+	"Sheffield": {
+		"id":"E08000019"
+	},
+	"Solihull": {
+		"id":"E08000029"
+	},
+	"South Tyneside": {
+		"id":"E08000023"
+	},
+	"St. Helens": {
+		"id":"E08000013"
+	},
+	"Stockport": {
+		"id":"E08000007"
+	},
+	"Sunderland": {
+		"id":"E08000024"
+	},
+	"Tameside": {
+		"id":"E08000008"
+	},
+	"Trafford": {
+		"id":"E08000009"
+	},
 	"Transport for London": {
 		"id": "",
 		"about": "https://cycling.data.tfl.gov.uk/"
 	},
 	"Wakefield Council": {
 		"id": "E08000036"
+	},
+	"Walsall": {
+		"id":"E08000030"
+	},
+	"Wigan": {
+		"id":"E08000010"
+	},
+	"Wirral": {
+		"id":"E08000015"
+	},
+	"Wolverhampton": {
+		"id":"E08000031"
 	}
 }
