@@ -12,6 +12,7 @@ table.opencycle td, table.opencycle th {
 	text-align: center;
 }
 table.opencycle th {
+	font-weight: bold;
 	background: #cccccc;
 	border: 1px solid #aaaaaa;
 }
