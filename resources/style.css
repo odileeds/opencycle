@@ -1,11 +1,12 @@
 header h1 { display: none; }
 h1 { margin-bottom: 1em; }
+.table-holder { max-width: 100%; overflow-x: auto;  }
+table.opencycle { width: 100%; }
 table.opencycle a { text-decoration: none; }
 table.opencycle .tick { padding: 0px; position: relative; }
 table.opencycle .tick a { display: block; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; line-height: 2.5em; }
-table.opencycle { width: 100%; max-width: 100%; overflow-x: auto; }
 table.opencycle td, table.opencycle th {
-	padding: 0.5em 1em;
+	padding: 0.5em;
 	border-collapse: collapse;
 	border: 1px solid #cccccc;
 	text-align: center;
@@ -16,6 +17,7 @@ table.opencycle th {
 }
 table.opencycle td:first-child, table.opencycle th:first-child {
 	text-align: left;
+	overflow: hidden; white-space: nowrap; text-overflow: ellipsis;
 }
 table.opencycle .routes, table.opencycle .infrastructure { border-left-width: 3px; width: 120px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
-table.opencycle .routes.file, table.opencycle .infrastructure.file { border-left-width: 1px; max-width: 100px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+table.opencycle .routes.file, table.opencycle .infrastructure.file { border-left-width: 1px; max-width: 80px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }

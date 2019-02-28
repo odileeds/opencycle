@@ -5,7 +5,7 @@ S(document).ready(function(){
 			var la,rows,f,ft,filetypes,table,t,typ;
 			rows = '';
 			types = ['routes','infrastructure'];
-			filetypes = ['shapefile','geojson','kml'];
+			filetypes = ['shapefile','geojson','kml','pdf'];
 			for(la in d){
 				if(d[la]){
 					rows += '<tr><td>'+la+'</td>';
@@ -16,8 +16,8 @@ S(document).ready(function(){
 							ft = filetypes[f];
 								console.log(ft,typ)
 							if(typ && typ.files && typ.files[ft]){
-								rows += '<td class="'+types[t]+' file tick">'+(typ.files[ft].url ? '<a href="'+typ.files[ft].url+'">&#9989;</a>':'&times;')+'</td>';
-							}else rows += '<td class="'+types[t]+' file">&#10006;</td>';
+								rows += '<td class="'+types[t]+' file file-'+ft+' tick">'+(typ.files[ft].url ? '<a href="'+typ.files[ft].url+'">&#9989;</a>':'&times;')+'</td>';
+							}else rows += '<td class="'+types[t]+' file file-'+ft+'">&#10006;</td>';
 						}
 					}
 					rows += '</tr>';
@@ -26,10 +26,10 @@ S(document).ready(function(){
 			table = '<table class="opencycle"><tr><th>Local authority</th>';
 			for(t = 0; t < types.length; t++){
 				table += '<th class="'+types[t]+'">'+types[t]+'</th>';
-				for(f = 0; f < filetypes.length; f++) table += '<th class="'+types[t]+' file">'+filetypes[f]+'</th>';
+				for(f = 0; f < filetypes.length; f++) table += '<th class="'+types[t]+' file file-'+ft+'">'+filetypes[f]+'</th>';
 			}
 			table += '</tr>'+rows+'</table>';
-			S('#table').html(table);
+			S('#table').html('<div class="table-holder">'+table+'</div>');
 		},
 		'error':function(d,attr){
 			console.log("Can't load "+attr.url);
