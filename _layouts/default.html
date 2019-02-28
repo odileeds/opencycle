@@ -7,7 +7,22 @@
 	<script type="text/javascript" src="https://odileeds.org/resources/stuquery.js"></script>
 	<script type="text/javascript" src="resources/maketable.js"></script>
 	<link rel="StyleSheet" href="https://odileeds.org/resources/style.css" type="text/css" />
-	</head>
+	<script>
+	S(document).ready(function(){
+		S().ajax('data/list.json',{
+			'dataType':'json',
+			'success':function(d,a){
+				for(la in d){
+					console.log(la);
+				}
+			},
+			'error':function(d,attr){
+				console.log("Can't load "+attr.url);
+			}
+		});
+	});
+	</script>
+</head>
 <body>
 	<div id="site-message" class="c14-bg"><div>This is an example. The data and links are not guaranteed to be correct.</div></div>
 	<div id="main">
@@ -22,6 +37,7 @@
 
 		<div class="holder">
 			{{ content }}
+			<div id="table"></div>
 		</div>
 	</div>
 

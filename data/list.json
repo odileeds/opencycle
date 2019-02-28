@@ -1,0 +1,22 @@
+{
+	"Bradford City Council": {},
+	"Calderdale Council": {},
+	"Leeds City Council": {
+		"routes": {
+			"about": "https://github.com/odileeds/opencycle/",
+			"files": {
+				"shapefile": {
+					"url": "https://datamillnorth.org/download/cycle-routes-in-leeds/8a09a634-d190-4ea0-8b50-6983eedca7ee/cycle-routes.zip",
+					"lastupdated": "2013-11-11"
+					"about": "some URL"
+				},
+				"geojson": {
+					"url": "Another URL"
+					"lastupdated": "2019-02-28"
+					"about": "https://github.com/odileeds/opencycle/"
+				}
+			}
+		},
+		"infrastructure": {}
+	}
+}
