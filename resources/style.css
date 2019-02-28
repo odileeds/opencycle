@@ -1,0 +1,17 @@
+#main h1 { display: none; }
+table.opencycle { width: 100%; max-width: 100%; overflow-x: auto; }
+table.opencycle td, table.opencycle th {
+	padding: 0.5em 1em;
+	border-collapse: collapse;
+	border: 1px solid #cccccc;
+	text-align: center;
+}
+table.opencycle th {
+	background: #cccccc;
+	border: 1px solid #aaaaaa;
+}
+table.opencycle td:first-child, table.opencycle th:first-child {
+	text-align: left;
+}
+table.opencycle .routes, table.opencycle .infrastructure { border-left-width: 3px; }
+table.opencycle .routes.file, table.opencycle .infrastructure.file { border-left-width: 1px; }

@@ -2,29 +2,31 @@ S(document).ready(function(){
 	S().ajax('data/list.json',{
 		'dataType':'json',
 		'success':function(d,a){
-			var la,rows,f,ft,filetypes,table;
+			var la,rows,f,ft,filetypes,table,t,typ;
 			rows = '';
-			filetypes = ['shapefile','geojson'];
+			types = ['routes','infrastructure'];
+			filetypes = ['shapefile','geojson','kml'];
 			for(la in d){
 				if(d[la]){
-					rows += '<tr><td>'+la+'</td><td class="routes">'+(d[la].routes.about ? '[<a href="'+d[la].routes.about+'">link</a>]':'')+'</td>';
-					if(d[la].routes){
-						for(f = 0; f < filetypes; f++){
+					rows += '<tr><td>'+la+'</td>';
+					for(t = 0; t < types.length; t++){
+						typ = d[la][types[t]];
+						rows += '<td class="'+types[t]+'">'+(typ && typ.about ? '[<a href="'+typ.about+'">link</a>]':'')+'</td>';
+						for(f = 0; f < filetypes.length; f++){
 							ft = filetypes[f];
-							if(!d[la].routes[ft]){
-								rows += '<td>&times;</td>';
-							}else{
-								rows += '<td>'+(d[la].routes[ft].url ? '['+d[la].routes[ft].url+']':'&times;')+'</td>';
-							}
+								console.log(ft,typ)
+							if(typ && typ.files && typ.files[ft]){
+								rows += '<td class="'+types[t]+' file">'+(typ.files[ft].url ? '[<a href="'+typ.files[ft].url+'">link</a>]':'&times;')+'</td>';
+							}else rows += '<td class="routes file"></td>';
 						}
 					}
 					rows += '</tr>';
-					console.log(la);
 				}
 			}
-			table = '<table class="odi"><tr><th>Local authority</th><th class="routes">Routes</th>';
-			for(f = 0; f < filetypes; f++){
-				table += '<th>'+filetypes[f]+'</th>';
+			table = '<table class="opencycle"><tr><th>Local authority</th>';
+			for(t = 0; t < types.length; t++){
+				table += '<th class="'+types[t]+'">'+types[t]+'</th>';
+				for(f = 0; f < filetypes.length; f++) table += '<th>'+filetypes[f]+'</th>';
 			}
 			table += '</tr>'+rows+'</table>';
 			S('#table').html(table);
