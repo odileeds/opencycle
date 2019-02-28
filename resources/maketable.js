@@ -11,7 +11,7 @@ S(document).ready(function(){
 					rows += '<tr><td>'+la+'</td>';
 					for(t = 0; t < types.length; t++){
 						typ = d[la][types[t]];
-						rows += '<td class="'+types[t]+'">'+(typ && typ.about ? '[<a href="'+typ.about+'">link</a>]':'')+'</td>';
+						rows += '<td class="'+types[t]+'">'+(typ && typ.about ? '<a href="'+typ.about+'">more info</a>':'')+'</td>';
 						for(f = 0; f < filetypes.length; f++){
 							ft = filetypes[f];
 								console.log(ft,typ)
