@@ -26,4 +26,4 @@ a.file-pdf { color: transparent; background-position: center center; background-
 a.file-geojson { color: transparent; background-position: center center; background-repeat: no-repeat; background-size: auto 70%; background-image: url('files/json.svg'); }
 a.file-shapefile { color: transparent; background-position: center center; background-repeat: no-repeat; background-size: auto 70%; background-image: url('files/shp.svg'); }
 a.file-kml { color: transparent; background-position: center center; background-repeat: no-repeat; background-size: auto 70%; background-image: url('files/shp.kml'); }
-.missing { opacity: 0.4; }
+.missing { opacity: 0.15; }
