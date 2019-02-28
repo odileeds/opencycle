@@ -1,7 +1,15 @@
 {
-	"Bradford City Council": {},
-	"Calderdale Council": {},
+	"Bradford City Council": {
+		"id": "E08000032"
+	},
+	"Calderdale Council": {
+		"id": "E08000033"
+	},
+	"Kirklees Council": {
+		"id": "E08000034"
+	},
 	"Leeds City Council": {
+		"id": "E08000035",
 		"routes": {
 			"about": "https://github.com/odileeds/opencycle/",
 			"files": {
@@ -18,5 +26,8 @@
 			}
 		},
 		"infrastructure": {}
+	},
+	"Wakefield Council": {
+		"id": "E08000036"
 	}
 }
