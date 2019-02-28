@@ -16,8 +16,8 @@ S(document).ready(function(){
 							ft = filetypes[f];
 								console.log(ft,typ)
 							if(typ && typ.files && typ.files[ft]){
-								rows += '<td class="'+types[t]+' file">'+(typ.files[ft].url ? '[<a href="'+typ.files[ft].url+'">link</a>]':'&times;')+'</td>';
-							}else rows += '<td class="'+types[t]+' file"></td>';
+								rows += '<td class="'+types[t]+' file tick">'+(typ.files[ft].url ? '<a href="'+typ.files[ft].url+'">&#9989;</a>':'&times;')+'</td>';
+							}else rows += '<td class="'+types[t]+' file">&#10006;</td>';
 						}
 					}
 					rows += '</tr>';
