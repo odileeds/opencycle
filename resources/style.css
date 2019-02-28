@@ -1,4 +1,5 @@
-#main h1 { display: none; }
+header h1 { display: none; }
+h1 { margin-bottom: 1em; }
 table.opencycle { width: 100%; max-width: 100%; overflow-x: auto; }
 table.opencycle td, table.opencycle th {
 	padding: 0.5em 1em;
