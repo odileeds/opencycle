@@ -1,2 +1,0 @@
-# opencycle
-Open Cycling
