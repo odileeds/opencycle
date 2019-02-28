@@ -22,3 +22,8 @@ table.opencycle td:first-child, table.opencycle th:first-child {
 }
 table.opencycle .routes, table.opencycle .infrastructure { border-left-width: 3px; width: 120px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
 table.opencycle .routes.file, table.opencycle .infrastructure.file { border-left-width: 1px; max-width: 80px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+a.file-pdf { color: transparent; background-position: center center; background-repeat: no-repeat; background-size: auto 70%; background-image: url('files/pdf.svg'); }
+a.file-geojson { color: transparent; background-position: center center; background-repeat: no-repeat; background-size: auto 70%; background-image: url('files/json.svg'); }
+a.file-shapefile { color: transparent; background-position: center center; background-repeat: no-repeat; background-size: auto 70%; background-image: url('files/shp.svg'); }
+a.file-kml { color: transparent; background-position: center center; background-repeat: no-repeat; background-size: auto 70%; background-image: url('files/shp.kml'); }
+.missing { opacity: 0.4; }
