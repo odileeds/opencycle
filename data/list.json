@@ -12,7 +12,16 @@
 		}
 	},
 	"Calderdale Council": {
-		"id": "E08000033"
+		"id": "E08000033",
+		"infrastructure": {
+			"about": "https://dataworks.calderdale.gov.uk/dataset/cycle-storage",
+			"files": {
+				"geojson": {
+					"url": "https://dataworks.calderdale.gov.uk/download/cycle-storage/2f7cbabc-2efa-4e18-9e1b-57f969ade093/Cycle%20Storage%20Locations%20%2009-17.json",
+					"lastupdated": "2018-08"
+				}
+			}
+		}
 	},
 	"Kirklees Council": {
 		"id": "E08000034"
