@@ -13,5 +13,5 @@ table.opencycle th {
 table.opencycle td:first-child, table.opencycle th:first-child {
 	text-align: left;
 }
-table.opencycle .routes, table.opencycle .infrastructure { border-left-width: 3px; }
-table.opencycle .routes.file, table.opencycle .infrastructure.file { border-left-width: 1px; }
+table.opencycle .routes, table.opencycle .infrastructure { border-left-width: 3px; width: 120px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+table.opencycle .routes.file, table.opencycle .infrastructure.file { border-left-width: 1px; max-width: 100px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }

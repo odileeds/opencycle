@@ -17,7 +17,7 @@ S(document).ready(function(){
 								console.log(ft,typ)
 							if(typ && typ.files && typ.files[ft]){
 								rows += '<td class="'+types[t]+' file">'+(typ.files[ft].url ? '[<a href="'+typ.files[ft].url+'">link</a>]':'&times;')+'</td>';
-							}else rows += '<td class="routes file"></td>';
+							}else rows += '<td class="'+types[t]+' file"></td>';
 						}
 					}
 					rows += '</tr>';
@@ -26,7 +26,7 @@ S(document).ready(function(){
 			table = '<table class="opencycle"><tr><th>Local authority</th>';
 			for(t = 0; t < types.length; t++){
 				table += '<th class="'+types[t]+'">'+types[t]+'</th>';
-				for(f = 0; f < filetypes.length; f++) table += '<th>'+filetypes[f]+'</th>';
+				for(f = 0; f < filetypes.length; f++) table += '<th class="'+types[t]+' file">'+filetypes[f]+'</th>';
 			}
 			table += '</tr>'+rows+'</table>';
 			S('#table').html(table);
