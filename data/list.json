@@ -1,6 +1,15 @@
 {
 	"Bradford City Council": {
-		"id": "E08000032"
+		"id": "E08000032",
+		"routes": {
+			"about": "https://www.bradford.gov.uk/sport-and-activities/cycling/bradford-district-cycle-map/",
+			"files": {
+				"pdf": {
+					"url": "https://www.bradford.gov.uk/media/4397/bradfordcyclemap.pdf",
+					"lastupdated": "2017"
+				}
+			}
+		}
 	},
 	"Calderdale Council": {
 		"id": "E08000033"
@@ -11,7 +20,7 @@
 	"Leeds City Council": {
 		"id": "E08000035",
 		"routes": {
-			"about": "https://github.com/odileeds/opencycle/",
+			"about": "https://datamillnorth.org/dataset/cycle-routes-in-leeds",
 			"files": {
 				"shapefile": {
 					"url": "https://datamillnorth.org/download/cycle-routes-in-leeds/8a09a634-d190-4ea0-8b50-6983eedca7ee/cycle-routes.zip",
