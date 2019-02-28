@@ -1,10 +1,35 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>{{ page.title }}</title>
-    </head>
-    <body>
-        {{ content }}
-    </body>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8" />
+	<title>{{ page.title }}</title>
+	<script type="text/javascript" src="https://odileeds.org/resources/stuquery.js"></script>
+	<script type="text/javascript" src="resources/maketable.js"></script>
+	<link rel="StyleSheet" href="https://odileeds.org/resources/style.css" type="text/css" />
+	</head>
+<body>
+	<div id="site-message" class="c14-bg"><div>This is an example. The data and links are not guaranteed to be correct.</div></div>
+	<div id="main">
+		<header>
+			<div class="b1-bg">
+				<div class="holder" style="text-align:center;">
+					<a href="https://odileeds.org/"><img src="../../resources/images/odileeds-8.svg" /></a>
+					<h1>Business rates</h1>
+				</div>
+			</div>
+		</header>
+
+		<div class="holder">
+			{{ content }}
+		</div>
+	</div>
+
+	<footer class="b1-bg">
+		<div class="holder">
+			<p>&copy; 2019 ODI Leeds
+			<br />Maintained by Stuart Lowe (<a href="http://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>)
+		</div>
+	</footer>
+</body>
 </html>
