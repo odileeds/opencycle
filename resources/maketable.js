@@ -23,9 +23,13 @@ S(document).ready(function(){
 					rows += '</tr>';
 				}
 			}
-			table = '<table class="opencycle"><tr><th>Local authority</th>';
+			table = '<table class="opencycle"><tr><th rowspan="2">Local authority</th>';
 			for(t = 0; t < types.length; t++){
-				table += '<th class="'+types[t]+'">'+types[t]+'</th>';
+				table += '<th class="'+types[t]+'" colspan="'+(filetypes.length+1)+'">'+types[t]+'</th>';
+			}
+			table += '</tr><tr>';
+			for(t = 0; t < types.length; t++){
+				table += '<th class="'+types[t]+' info">Info</th>';
 				for(f = 0; f < filetypes.length; f++) table += '<th class="'+types[t]+' file">'+filetypes[f]+'</th>';
 			}
 			table += '</tr>'+rows+'</table>';
