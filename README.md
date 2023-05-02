@@ -1,5 +1,5 @@
 # Open cycle
-An example of creating a master list of links to local authority cycle data. 
+An example of creating a list of links to local authority cycle data. 
 
 ## Data
 
